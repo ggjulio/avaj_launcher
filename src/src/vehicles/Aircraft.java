@@ -1,4 +1,6 @@
+package vehicles;
 
+import Coordinates;
 
 public class Aircraft {
     protected long id;

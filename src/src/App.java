@@ -3,6 +3,8 @@ import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
 
+import vehicles.Flyable;
+
 public class App {
     private static WeatherTower weatherTower;
     private static List<Flyable> flyables = new ArrayList<Flyable>();

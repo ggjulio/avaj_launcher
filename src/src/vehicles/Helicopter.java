@@ -1,4 +1,7 @@
-package test
+package vehicles
+
+import Coordinates;
+import WeatherTower;
 
 public class Helicopter extends Aircraft implements Flyable {
     private WeatherTower weatherTower;

@@ -1,3 +1,5 @@
+import vehicles.Aircraft;
+import vehicles.Flyable;
 
 public class JetPlane extends Aircraft implements Flyable {
     private WeatherTower weatherTower;

@@ -1,7 +1,5 @@
 package vehicles;
-import Aircraft;
 import Coordinates;
-import Flyable;
 import WeatherTower;
 
 public class Balloon extends Aircraft implements Flyable{
