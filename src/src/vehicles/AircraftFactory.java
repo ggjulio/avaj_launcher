@@ -1,6 +1,6 @@
-import vehicles.Balloon;
-import vehicles.Flyable;
-import vehicles.Helicopter;
+package vehicles;
+
+import weather.Coordinates;
 
 public class AircraftFactory {
 

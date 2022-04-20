@@ -1,4 +1,6 @@
-import WeatherTower;package vehicles;
+package vehicles;
+
+import weather.WeatherTower;
 
 
 public interface Flyable {

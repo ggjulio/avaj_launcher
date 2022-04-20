@@ -1,6 +1,6 @@
 package vehicles;
 
-import Coordinates;
+import weather.Coordinates;
 
 public class Aircraft {
     protected long id;

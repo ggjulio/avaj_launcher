@@ -1,7 +1,7 @@
-package vehicles
+package vehicles;
 
-import Coordinates;
-import WeatherTower;
+import weather.Coordinates;
+import weather.WeatherTower;
 
 public class Helicopter extends Aircraft implements Flyable {
     private WeatherTower weatherTower;

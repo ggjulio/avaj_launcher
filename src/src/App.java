@@ -3,7 +3,9 @@ import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
 
+import vehicles.AircraftFactory;
 import vehicles.Flyable;
+import weather.WeatherTower;
 
 public class App {
     private static WeatherTower weatherTower;

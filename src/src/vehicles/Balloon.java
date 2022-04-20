@@ -1,6 +1,7 @@
 package vehicles;
-import Coordinates;
-import WeatherTower;
+
+import weather.Coordinates;
+import weather.WeatherTower;
 
 public class Balloon extends Aircraft implements Flyable{
     private WeatherTower weatherTower;
