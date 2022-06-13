@@ -7,12 +7,13 @@ public class AircraftFactory {
     public static Flyable newAircraft(String type, String name, int longitude, int latitude,
             int height) throws Exception {
         Coordinates Coordinates = new Coordinates(longitude, latitude, height);
-        if (type == "Baloon")
+        if (type.equals("Baloon"))
             return new Balloon(name, Coordinates);
-        if (type == "JetPlane")
+        if (type.equals("JetPlane"))
             return new JetPlane(name, Coordinates);
-        if (type == "Helicopter")
+        if (type.equals("Helicopter"))
             return new Helicopter(name, Coordinates);
-        throw new Exception("Unknown type: %s".formatted(type));
+        // throw new Exception("Unknown type: %s".formatted(type));
+        throw new Exception(String.format("Unknown type: %s", type));
     }
 }
