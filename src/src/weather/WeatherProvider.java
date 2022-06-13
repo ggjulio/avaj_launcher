@@ -1,16 +1,16 @@
 package weather;
 
 public class WeatherProvider {
-	private static WeatherProvider INSTANCE;
+	private static WeatherProvider weatherProvider;
 	private static String[] weather = { "RAIN", "FOG", "SUN", "SNOW" };
 
 	private WeatherProvider() {
 	}
 
 	public WeatherProvider getProvider() {
-		if (INSTANCE == null)
-			INSTANCE = new WeatherProvider();
-		return INSTANCE;
+		if (weatherProvider == null)
+			weatherProvider = new WeatherProvider();
+		return weatherProvider;
 	}
 
 	public String getCurrentWeather(Coordinates coordinates) {
