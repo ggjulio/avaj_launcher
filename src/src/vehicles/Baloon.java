@@ -3,10 +3,10 @@ package vehicles;
 import weather.Coordinates;
 import weather.WeatherTower;
 
-public class Balloon extends Aircraft implements Flyable {
+public class Baloon extends Aircraft implements Flyable {
     private WeatherTower weatherTower;
 
-    public Balloon(String name, Coordinates coordinates) {
+    public Baloon(String name, Coordinates coordinates) {
         super(name, coordinates);
         weatherTower = new WeatherTower();
     }

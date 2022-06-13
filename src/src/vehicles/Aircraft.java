@@ -14,6 +14,7 @@ public class Aircraft {
         this.name = name;
         this.coordinates = coordinates;
     }
+
     private long nextId(){
         long id = idCounter++;
         return id;

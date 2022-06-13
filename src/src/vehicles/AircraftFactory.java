@@ -8,7 +8,7 @@ public class AircraftFactory {
             int height) throws Exception {
         Coordinates Coordinates = new Coordinates(longitude, latitude, height);
         if (type.equals("Baloon"))
-            return new Balloon(name, Coordinates);
+            return new Baloon(name, Coordinates);
         if (type.equals("JetPlane"))
             return new JetPlane(name, Coordinates);
         if (type.equals("Helicopter"))
