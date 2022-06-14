@@ -5,6 +5,7 @@ import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
 
+import simulation.exceptions.InvalidSimulationCountException;
 import vehicles.AircraftFactory;
 import vehicles.Flyable;
 import weather.WeatherTower;
@@ -23,10 +24,8 @@ public class App {
 				weatherTower = new WeatherTower();
 				int nbSimulations = Integer.parseInt(line);
 
-				if (nbSimulations <= 0) {
-					System.err.println(String.format("Invalid simulations count %d", nbSimulations));
-					System.exit(1);
-				}
+				if (nbSimulations <= 0)
+					throw new InvalidSimulationCountException(String.format("Invalid simulations count %d", nbSimulations));
 				while ((line = br.readLine()) != null) {
 					var arr = line.split(" ");
 					Flyable flyable = AircraftFactory.newAircraft(
