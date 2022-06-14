@@ -1,5 +1,6 @@
 package vehicles;
 
+import simulation.exceptions.UnknownObserverNameException;
 import weather.Coordinates;
 
 public class AircraftFactory {
@@ -13,7 +14,6 @@ public class AircraftFactory {
             return new JetPlane(name, Coordinates);
         if (type.equals("Helicopter"))
             return new Helicopter(name, Coordinates);
-        // throw new Exception("Unknown type: %s".formatted(type));
-        throw new Exception(String.format("Unknown type: %s", type));
+        throw new UnknownObserverNameException(String.format("Unknown type: %s", type));
     }
 }
