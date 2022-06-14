@@ -24,7 +24,6 @@ public class App {
 				int nbSimulations = Integer.parseInt(line);
 
 				if (nbSimulations <= 0) {
-					// System.err.println("Invalid simulations count %d".formatted(nbSimulations));
 					System.err.println(String.format("Invalid simulations count %d", nbSimulations));
 					System.exit(1);
 				}

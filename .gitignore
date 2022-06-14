@@ -1,5 +1,6 @@
 #custom
 src/.vscode/
+sources.txt
 
 # Compiled class file
 *.class
