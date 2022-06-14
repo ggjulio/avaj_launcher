@@ -1,10 +1,11 @@
 package weather;
 
+import java.util.ArrayList;
 import java.util.List;
 import vehicles.Flyable;
 
-public class Tower {
-	private List<Flyable> observers;
+public abstract class Tower {
+	private List<Flyable> observers = new ArrayList<Flyable>();
 
 	public void register(Flyable flyable) {
 		observers.add(flyable);
@@ -15,6 +16,7 @@ public class Tower {
 	}
 
 	protected void conditionChanged() {
-
+		for (Flyable o : observers)
+			o.updateConditions();
 	}
 }
