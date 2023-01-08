@@ -8,4 +8,4 @@ So it mean lot of dupplicates in Baloon/Helicopter/Jetplane to log things asked 
 
 ### sources
 - http://www.w3sdesign.com/GoF_Design_Patterns_Reference0100.pdf
-- 
+- https://holub.com/patterns/book.pdf
